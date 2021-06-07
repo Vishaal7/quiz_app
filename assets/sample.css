@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,200;1,400&family=Montserrat:ital@1&family=Quando&family=Questrial&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    overflow-y: hidden;
+    font-size: large;
+    font-size: 20px;
+    background-color:rgb(0, 30, 54);
+    letter-spacing: 1.2px;
+}
+h1{
+    margin-left: 20px;
+}
+.topcont{
+   position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow:white;
+    font-size:4em;
+    letter-spacing: 6px;
+    
+    display:flex;
+    justify-content: space-between;
+   color:rgb(206, 238, 238);
+    margin-bottom: 20px;
+    
+}
+
+
+
+.quest{
+    width:100vw;
+    font-size: 1.5em;
+    padding: 20px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(206, 238, 238);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+     font-family: 'Bebas Neue', cursive;
+                
+    
+}
+.ans{
+    margin: 20px;
+    width:60vw;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(206, 238, 238);
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.ans label{
+   padding: 5px;
+   font-size: 1.5em;
+  
+}
+.box{
+    display: none;
+}
+.box.show{
+    display: block;
+}
+.bigbox{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-top:40px ;
+}
+.bigbox.sh{
+    display: none;
+}
+.sho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  cursor: pointer;
+    width:300px;
+    height: 50px;
+    border-radius: 5px;
+    background-color:mintcream;
+    margin-top: 10px;
+    border:2px solid black;
+}
+
+.topic{
+    text-decoration: none;
+    color: inherit;
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    background-color:mintcream;
+    border-radius: 5px;
+
+}
+
+@media  screen and (max-width:900px) {
+
+   body{
+       
+       overflow-y: scroll;
+   }
+    .quest{
+        width:100vw;
+       height: fit-content;
+      
+   }
+   .ans{
+       width: 100vw;
+   }
+   .bigbox{
+  
+      overflow-y: scroll;
+      overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+    
+}

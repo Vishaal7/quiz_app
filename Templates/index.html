@@ -1,0 +1,48 @@
+<!--Quiz app main file-->
+{%load static%}
+<!DOCTYPE html>
+
+<head>
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="{% static 'sample.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+ {% block content %}
+ <div class="container">
+    {% for sub in sub%}
+  
+      <div class="topHeader">
+        <div>{{sub.sub}}</div>  
+      </div>
+    
+      <div class="box show">
+      
+        <div class="questions">{{sub.qn}}</div> 
+
+           <form class="formOptions"  method="POST">
+              {% csrf_token %}
+            
+             <label><input type="radio" name="radioBtn" value="{{sub.a}}"   >{{sub.a}}</label>
+             <label><input type="radio" name="radioBtn" value="{{sub.b}}" >{{sub.b}}</label>
+             <label><input type="radio" name="radioBtn" value="{{sub.c}}" >{{sub.c}}</label>
+             <label><input type="radio" name="radioBtn" value="{{sub.d}}" >{{sub.d}}</label>
+             <div class="verifyAnswer" onclick="verifyAnswer()">Verify</div> 
+             <a class="topic" href="/"><div >Try another topic?</div></a>
+            
+    
+             <label class="qNumber" style="display: none;">{{sub.index}}</label>
+             <label class= "answers" name="answers" id="answers" style="display: none;"  >{{sub.ans}}</label>
+           </form> 
+    
+      </div>
+   {%endfor%}
+    
+  </div>
+{%endblock%}
+  
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<script src="{% static './sample.js' %}"></script>
+</body>
+</html>
