@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-2+ld4a)i%dfvev#j1ql_ra=7_)0m9p2#)d34(=y0glzeyv3$t$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','quiz-vishaal.herokuapp.com']
+ALLOWED_HOSTS = ['quiz-vishaal.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'quiz'
+    'django.contrib.staticfiles'
+   
     
     
 ]
@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'vishaal7',
         'USER': 'postgres',
         'PASSWORD': '1234',
-        'HOST':'localhost'
+        
     }
         
     
