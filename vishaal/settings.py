@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
 <<<<<<< HEAD
     'django.contrib.staticfiles'
+=======
+    'django.contrib.staticfiles',
+>>>>>>> 593f9b149963978db2589011806dedf2cd9cd597
    
     
     
