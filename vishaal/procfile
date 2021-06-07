@@ -1,0 +1,1 @@
+web: gunicorn vishaal.wsgi --log-file -
