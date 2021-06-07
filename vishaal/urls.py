@@ -22,7 +22,6 @@ import quiz
 
 urlpatterns = [
     path('',include('quiz.urls')),
-    path('geography/',views.geography,name='geography'),
-
+    
     path('admin/', admin.site.urls),
 ]
