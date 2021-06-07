@@ -39,12 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-<<<<<<< HEAD
-    'django.contrib.staticfiles'
-=======
-    'django.contrib.staticfiles',
->>>>>>> 593f9b149963978db2589011806dedf2cd9cd597
-   
+    'django.contrib.staticfiles' 
     
     
 ]
