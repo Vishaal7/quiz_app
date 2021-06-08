@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import ByteString
 import psycopg2
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -82,17 +83,10 @@ WSGI_APPLICATION = 'vishaal.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE':'django.db.backends.postgresql',
-        'NAME': 'vishaal7',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'quizfortesting.herokuapp.com'
-    }
-        
-    
-}
+   'default':          
 
+'postgres://sbnxiiwecpvejj:9fea24c9234b5176a218f562029dc71e780abcabfbf5c07c5b5ded2f67057ee7@ec2-3-233-7-12.compute-1.amazonaws.com:5432/d7cm0rijsf6ve'
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -139,3 +133,4 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
