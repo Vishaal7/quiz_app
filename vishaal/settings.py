@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'vishaal7',
         'USER': 'postgres',
         'PASSWORD': '1234',
-        
+        'HOST': 'quizfortesting.herokuapp.com'
     }
         
     
