@@ -80,13 +80,22 @@ WSGI_APPLICATION = 'vishaal.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databasesheroku
 
 DATABASES = {
-   'default':          
-
-'postgres://sbnxiiwecpvejj:9fea24c9234b5176a218f562029dc71e780abcabfbf5c07c5b5ded2f67057ee7@ec2-3-233-7-12.compute-1.amazonaws.com:5432/d7cm0rijsf6ve'
+   'default': {
+        'ENGINE':'django.db.backends.postgresql',
+        'NAME': 'd7cm0rijsf6ve',
+        'HOST': 'ec2-3-233-7-12.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'sbnxiiwecpvejj',
+        'PASSWORD': '9fea24c9234b5176a218f562029dc71e780abcabfbf5c07c5b5ded2f67057ee7'
+    }
+         
 }
+
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
